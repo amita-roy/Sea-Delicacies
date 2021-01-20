@@ -54,11 +54,12 @@ body {
 .navbar {
   position: fixed;
   width: 100%;
-  padding: 50px 80px;
+  padding: 30px 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-family: 'Poppins', sans-serif;
+  transition: all 0.5s ease-in;
 }
 
 .navbar,
@@ -124,6 +125,7 @@ body {
 }
 
 .rightHead img {
+  min-width: 450px;
   width: 85%;
   height: auto;
   border-radius: 100%;
