@@ -6,6 +6,8 @@
 
 .navbar {
   border: 2px solid red;
+  position: fixed;
+  width: 100%;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -14,4 +16,10 @@
 
 .linkList a {
   margin-left: 20px;
+}
+
+.header {
+  border: 5px solid green;
+  height: 100vh;
+  background-image: url('./head.png');
 }
