@@ -2,7 +2,53 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #1b1b1b;
+  color: #1c1c1c;
+}
+
+body {
+  font-family: 'OpenSans', sans-serif;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./Poppins-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./Poppins-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('./OpenSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('./OpenSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }
 
 .navbar {
@@ -12,6 +58,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar,
+.leftHead h1 {
+  font-family: 'Poppins', sans-serif;
 }
 
 .logo {
@@ -23,6 +75,7 @@
   margin-left: 70px;
   font-size: 20px;
   color: white;
+  font-weight: 500;
 }
 
 .header {
@@ -41,7 +94,7 @@
 }
 
 .leftHead h1 {
-  font-size: 80px;
+  font-size: 55px;
 }
 
 .leftHead h1,
