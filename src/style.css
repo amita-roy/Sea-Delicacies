@@ -5,22 +5,31 @@
 }
 
 .navbar {
-  border: 2px solid red;
   position: fixed;
   width: 100%;
-  padding: 20px 50px;
+  padding: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
 .linkList a {
-  margin-left: 20px;
+  margin-left: 70px;
+  font-size: 20px;
+  color: white;
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: 5px solid green;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url('./head.png');
 }
 
@@ -30,6 +39,10 @@
   margin-top: 200px;
 }
 
+.leftHead h1 {
+  font-size: 80px;
+}
+
 .leftHead h1,
 .leftHead p {
   margin-bottom: 30px;
@@ -37,6 +50,7 @@
 
 .leftHead p {
   line-height: 1.8;
+  color: rgb(88, 88, 88);
 }
 
 .leftHead button {
@@ -46,4 +60,15 @@
   background-color: #ff9e01;
   color: white;
   border-radius: 25px;
+}
+.rightHead {
+  width: 50%;
+  margin-top: 150px;
+}
+
+.rightHead img {
+  width: 85%;
+  height: auto;
+  border-radius: 100%;
+  /* border: 15px solid white; */
 }

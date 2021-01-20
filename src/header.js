@@ -1,3 +1,5 @@
+import headImage from './headImage.png';
+
 const leftContainer = () => {
   const lc = document.createElement('div');
   const heading = document.createElement('h1');
@@ -18,14 +20,26 @@ const leftContainer = () => {
   return lc;
 };
 
-module.exports = function header() {
-  const head = document.createElement('div');
+const rightContainer = () => {
+  const rc = document.createElement('div');
 
-  const rightContainer = document.createElement('div');
+  rc.classList.add('rightHead');
+
+  const image = new Image();
+  image.src = headImage;
+
+  rc.appendChild(image);
+
+  return rc;
+};
+
+export default function header() {
+  const head = document.createElement('div');
 
   head.classList.add('header');
 
   head.appendChild(leftContainer());
+  head.appendChild(rightContainer());
 
   return head;
-};
+}
