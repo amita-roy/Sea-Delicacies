@@ -1,4 +1,7 @@
-module.exports = function navbar() {
+import menuPage from './menu';
+import homePage from './home';
+
+export default function navbar(navbarStyle = 'transparent') {
   const nav = document.createElement('div');
   const $ = jQuery;
 
@@ -9,23 +12,27 @@ module.exports = function navbar() {
   const contact = document.createElement('a');
 
   nav.classList.add('navbar');
+  nav.classList.add(navbarStyle);
   linkList.classList.add('linkList');
   logo.classList.add('logo');
 
   $(window).scroll(function () {
+    if (navbarStyle === 'opaque') {
+      return;
+    }
     if ($(window).scrollTop() > 100) {
-      $('.navbar').css('backgroundColor', 'white');
-      $('.linkList a').css('color', '#ff9e01');
+      $('.navbar').addClass('opaque');
+      $('.navbar').removeClass('transparent');
     } else {
-      $('.navbar').css('backgroundColor', 'transparent');
-      $('.linkList a').css('color', 'white');
+      $('.navbar').addClass('transparent');
+      $('.navbar').removeClass('opaque');
     }
   });
 
-  logo.innerHTML = 'Sea Delicacies';
-  home.innerHTML = 'Home';
-  menu.innerHTML = 'Menu';
-  contact.innerHTML = 'Contact';
+  logo.innerText = 'Sea Delicacies';
+  home.innerText = 'Home';
+  menu.innerText = 'Menu';
+  contact.innerText = 'Contact';
 
   linkList.appendChild(home);
   linkList.appendChild(menu);
@@ -34,5 +41,8 @@ module.exports = function navbar() {
   nav.appendChild(logo);
   nav.appendChild(linkList);
 
+  menu.addEventListener('click', menuPage);
+  home.addEventListener('click', homePage);
+
   return nav;
-};
+}
