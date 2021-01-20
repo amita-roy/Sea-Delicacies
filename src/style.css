@@ -8,7 +8,7 @@
   border: 2px solid red;
   position: fixed;
   width: 100%;
-  padding: 20px;
+  padding: 20px 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,4 +22,28 @@
   border: 5px solid green;
   height: 100vh;
   background-image: url('./head.png');
+}
+
+.leftHead {
+  max-width: 550px;
+  padding: 0 50px;
+  margin-top: 200px;
+}
+
+.leftHead h1,
+.leftHead p {
+  margin-bottom: 30px;
+}
+
+.leftHead p {
+  line-height: 1.8;
+}
+
+.leftHead button {
+  padding: 8px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #ff9e01;
+  color: white;
+  border-radius: 25px;
 }
