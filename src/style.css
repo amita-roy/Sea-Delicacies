@@ -54,7 +54,7 @@ body {
 .navbar {
   position: fixed;
   width: 100%;
-  padding: 50px;
+  padding: 50px 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -80,6 +80,7 @@ body {
 
 .header {
   display: flex;
+  padding: 0 80px;
   justify-content: space-between;
   align-items: center;
   border: 5px solid green;
@@ -89,7 +90,6 @@ body {
 
 .leftHead {
   max-width: 550px;
-  padding: 0 50px;
   margin-top: 200px;
 }
 
@@ -124,5 +124,10 @@ body {
   width: 85%;
   height: auto;
   border-radius: 100%;
-  /* border: 15px solid white; */
+}
+
+.about {
+  border: 2px solid blue;
+  background-image: url('./AboutBackground.png');
+  height: 500px;
 }
