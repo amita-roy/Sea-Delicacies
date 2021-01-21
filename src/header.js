@@ -8,11 +8,11 @@ const leftContainer = () => {
 
   lc.classList.add('leftHead');
 
-  heading.innerHTML = 'We Serve Love from the Ocean';
-  description.innerHTML =
+  heading.innerText = 'We Serve Love from the Ocean';
+  description.innerText =
     'There is no better dish than the one prepared instantly especially for you. That is the specialty of SEA DELICACIES';
 
-  cta.innerHTML = 'Menu';
+  cta.innerText = 'Menu';
 
   lc.appendChild(heading);
   lc.appendChild(description);

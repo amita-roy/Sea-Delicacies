@@ -10,10 +10,10 @@ const content = () => {
 
   rc.classList.add('content');
 
-  heading.innerHTML = 'About Us';
-  description.innerHTML = aboutDesc;
+  heading.innerText = 'About Us';
+  description.innerText = aboutDesc;
 
-  cta.innerHTML = 'View More';
+  cta.innerText = 'View More';
 
   rc.appendChild(heading);
   rc.appendChild(description);

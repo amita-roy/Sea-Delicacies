@@ -12,9 +12,9 @@ const card = (imageUrl, name, price, description) => {
   const dishImage = new Image();
   dishImage.src = imageUrl;
 
-  dishName.innerHTML = name;
-  dishPrice.innerHTML = price;
-  dishDescription.innerHTML = description;
+  dishName.innerText = name;
+  dishPrice.innerText = price;
+  dishDescription.innerText = description;
 
   card.appendChild(dishImage);
   card.appendChild(dishName);
@@ -33,7 +33,7 @@ export default function menu() {
       card(item.url, item.name, item.price, item.description)
     );
   });
-  mainContainer.innerHTML = '';
+  mainContainer.innerText = '';
   mainContainer.appendChild(navbar('opaque'));
   mainContainer.appendChild(itemGrid);
 
