@@ -1,5 +1,6 @@
 import menuPage from './menu';
 import homePage from './home';
+import contactPage from './contact';
 
 function enableTransition() {
   $(window).scroll(() => {
@@ -52,6 +53,7 @@ export default function navbar(navbarStyle = 'transparent') {
 
   menu.addEventListener('click', menuPage);
   home.addEventListener('click', homePage);
+  contact.addEventListener('click', contactPage);
 
   return nav;
 }
