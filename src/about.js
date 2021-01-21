@@ -1,5 +1,5 @@
 import aboutDesc from './aboutDesc.js';
-import aboutImage from './about1.png';
+import aboutImage from './assets/images/about1.png';
 
 const content = () => {
   const rc = document.createElement('div');
@@ -11,7 +11,7 @@ const content = () => {
   rc.classList.add('content');
 
   heading.innerHTML = 'About Us';
-  description.innerHTML = aboutDesc();
+  description.innerHTML = aboutDesc;
 
   cta.innerHTML = 'View More';
 

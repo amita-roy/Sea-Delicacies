@@ -1,4 +1,4 @@
-import headImage from './headImage.png';
+import headImage from './assets/images/headImage.png';
 
 const leftContainer = () => {
   const lc = document.createElement('div');
