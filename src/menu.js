@@ -29,7 +29,9 @@ export default function menu() {
   const itemGrid = document.createElement('div');
 
   menuItems.forEach((item) => {
-    itemGrid.appendChild(card('abc', item.name, item.price, item.description));
+    itemGrid.appendChild(
+      card(item.url, item.name, item.price, item.description)
+    );
   });
   mainContainer.innerHTML = '';
   mainContainer.appendChild(navbar('opaque'));
