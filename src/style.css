@@ -173,3 +173,56 @@ body {
   width: 450px;
   margin-right: 200px;
 }
+
+.itemList {
+  padding: 147px 120px 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+.itemList .card {
+  border-radius: 45px 0 45px;
+  box-shadow: 3px 3px 14px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s linear;
+}
+
+.itemList .card:hover {
+  transform: scale3d(1.05, 1.05, 1.05);
+}
+
+.card .cardImage {
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  border-bottom-right-radius: 45px;
+}
+
+.cardDetails {
+  padding: 25px;
+}
+
+.cardDetailsTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dishName {
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #ff9e01;
+}
+
+.dishPrice {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.dishDescription {
+  color: rgb(88, 88, 88);
+}
