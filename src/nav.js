@@ -1,6 +1,22 @@
 import menuPage from './menu';
 import homePage from './home';
 
+function enableTransition() {
+  $(window).scroll(() => {
+    if ($(window).scrollTop() > 100) {
+      $('.navbar').addClass('opaque');
+      $('.navbar').removeClass('transparent');
+    } else {
+      $('.navbar').addClass('transparent');
+      $('.navbar').removeClass('opaque');
+    }
+  });
+}
+
+function disableTransition() {
+  $(window).off('scroll');
+}
+
 export default function navbar(navbarStyle = 'transparent') {
   const nav = document.createElement('div');
   const $ = jQuery;
@@ -16,18 +32,11 @@ export default function navbar(navbarStyle = 'transparent') {
   linkList.classList.add('linkList');
   logo.classList.add('logo');
 
-  $(window).scroll(function () {
-    if (navbarStyle === 'opaque') {
-      return;
-    }
-    if ($(window).scrollTop() > 100) {
-      $('.navbar').addClass('opaque');
-      $('.navbar').removeClass('transparent');
-    } else {
-      $('.navbar').addClass('transparent');
-      $('.navbar').removeClass('opaque');
-    }
-  });
+  if (navbarStyle === 'transparent') {
+    enableTransition();
+  } else {
+    disableTransition();
+  }
 
   logo.innerText = 'Sea Delicacies';
   home.innerText = 'Home';

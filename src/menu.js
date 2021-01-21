@@ -1,28 +1,6 @@
 import navbar from './nav';
 import menuItems from './menuItems';
-
-const card = (imageUrl, name, price, description) => {
-  const card = document.createElement('div');
-  const dishName = document.createElement('p');
-  const dishPrice = document.createElement('p');
-  const dishDescription = document.createElement('p');
-
-  card.classList.add('card');
-
-  const dishImage = new Image();
-  dishImage.src = imageUrl;
-
-  dishName.innerText = name;
-  dishPrice.innerText = price;
-  dishDescription.innerText = description;
-
-  card.appendChild(dishImage);
-  card.appendChild(dishName);
-  card.appendChild(dishPrice);
-  card.appendChild(dishDescription);
-
-  return card;
-};
+import ItemCard from './itemCard';
 
 export default function menu() {
   const mainContainer = document.querySelector('#content');
@@ -30,10 +8,10 @@ export default function menu() {
 
   menuItems.forEach((item) => {
     itemGrid.appendChild(
-      card(item.url, item.name, item.price, item.description)
+      ItemCard(item.url, item.name, item.price, item.description)
     );
   });
-  mainContainer.innerText = '';
+  mainContainer.innerHTML = '';
   mainContainer.appendChild(navbar('opaque'));
   mainContainer.appendChild(itemGrid);
 
