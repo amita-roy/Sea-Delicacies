@@ -1,6 +1,6 @@
-import navbar from './nav.js';
-import header from './header.js';
-import about from './about.js';
+import navbar from './nav';
+import header from './header';
+import about from './about';
 
 export default function homePage() {
   const mainContainer = document.querySelector('#content');
