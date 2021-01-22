@@ -285,3 +285,9 @@ body {
   background-color: #ff9e01;
   z-index: -1;
 }
+
+.contactLinksContainer {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
