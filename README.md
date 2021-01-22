@@ -20,7 +20,7 @@
 
 ## Live Demo
 
-[sea-delicacies]()
+[sea-delicacies](https://sea-delicacies.vercel.app/)
 
 ### Prerequisites
 
