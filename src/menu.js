@@ -1,6 +1,7 @@
 import navbar from './nav';
 import menuItems from './menuItems';
 import ItemCard from './itemCard';
+import { registerEvents } from './index';
 
 export default function menu() {
   const mainContainer = document.querySelector('#content');
@@ -20,5 +21,7 @@ export default function menu() {
   menuContent.appendChild(itemGrid);
 
   mainContainer.appendChild(menuContent);
+
+  registerEvents();
   return mainContainer;
 }

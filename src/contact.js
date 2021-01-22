@@ -1,6 +1,7 @@
 import navbar from './nav';
 import OfferBox from './offerBox';
 import contactDetails from './contactDeatils';
+import { registerEvents } from './index';
 
 export default function contact() {
   const mainContainer = document.querySelector('#content');
@@ -19,5 +20,6 @@ export default function contact() {
   contactContent.appendChild(contactDetails());
 
   mainContainer.appendChild(contactContent);
+  registerEvents();
   return mainContainer;
 }

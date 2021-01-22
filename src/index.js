@@ -6,10 +6,12 @@ import './style.css';
 
 homePage();
 
-const home = document.getElementById('home');
-const menu = document.getElementById('menu');
-const contact = document.getElementById('contact');
+export function registerEvents() {
+  const home = document.getElementById('home');
+  const menu = document.getElementById('menu');
+  const contact = document.getElementById('contact');
 
-menu.addEventListener('click', menuPage);
-home.addEventListener('click', homePage);
-contact.addEventListener('click', contactPage);
+  menu.addEventListener('click', menuPage);
+  home.addEventListener('click', homePage);
+  contact.addEventListener('click', contactPage);
+}
