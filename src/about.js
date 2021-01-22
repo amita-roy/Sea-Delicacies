@@ -1,4 +1,4 @@
-import aboutDesc from './aboutDesc.js';
+import aboutDesc from './aboutDesc';
 import aboutImage from './assets/images/about1.png';
 
 const content = () => {

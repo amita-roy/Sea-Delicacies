@@ -7,8 +7,7 @@ export default function offerBox() {
 
   offerContainer.classList.add('offersBox');
   offerHeading.innerText = 'Get Our Special Offers!';
-  offerDesc.innerText =
-    'Complete the subscription with your email id and get our special offers.';
+  offerDesc.innerText = 'Complete the subscription with your email id and get our special offers.';
 
   emailInput.setAttribute('TYPE', 'EMAIL');
   emailInput.setAttribute('PLACEHOLDER', 'Please subscribe with your email');

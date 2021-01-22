@@ -15,7 +15,7 @@ export default (imageUrl, name, price, description) => {
   dishPrice.classList.add('dishPrice');
   dishDescription.classList.add('dishDescription');
 
-  cardImage.style.backgroundImage = 'url(' + imageUrl + ')';
+  cardImage.style.backgroundImage = `url(${imageUrl})`;
 
   dishName.innerText = name;
   dishPrice.innerText = price;

@@ -13,8 +13,16 @@
   "author": "Amita-Roy <amita.roy@workmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "babel-eslint": "10.1.x",
     "css-loader": "^5.0.1",
+    "eslint": "6.8.x",
+    "eslint-config-airbnb-base": "14.1.x",
+    "eslint-plugin-import": "2.20.x",
     "style-loader": "^2.0.0",
+    "stylelint": "13.3.x",
+    "stylelint-config-standard": "20.0.x",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "3.17.x",
     "webpack": "^5.15.0",
     "webpack-cli": "^4.4.0",
     "webpack-dev-server": "^3.11.2"

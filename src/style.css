@@ -67,19 +67,22 @@ body {
 }
 
 .navbar.opaque {
-  background-color: #ffffff;
+  background-color: #fff;
+}
+
+.linkList a {
+  margin-left: 70px;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
 }
 
 .navbar.opaque .linkList a {
   color: #ff9e01;
 }
 
-.navbar.transparent {
-  background-color: transparent;
-}
-
 .navbar.transparent .linkList a {
-  color: #ffffff;
+  color: #fff;
 }
 
 .navbar,
@@ -90,13 +93,6 @@ body {
 .logo {
   font-size: 22px;
   font-weight: bold;
-}
-
-.linkList a {
-  margin-left: 70px;
-  font-size: 20px;
-  color: white;
-  font-weight: 500;
 }
 
 .header {
@@ -139,6 +135,7 @@ body {
   color: white;
   border-radius: 25px;
 }
+
 .rightHead {
   width: 50%;
   margin-top: 150px;
@@ -249,6 +246,7 @@ body {
   border-radius: 20px;
   padding: 40px;
 }
+
 .offersBox h3 {
   font-size: 24px;
   margin-bottom: 30px;
