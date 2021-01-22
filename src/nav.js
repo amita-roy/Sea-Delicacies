@@ -1,7 +1,3 @@
-import menuPage from './menu';
-import homePage from './home';
-import contactPage from './contact';
-
 function enableTransition() {
   $(window).scroll(() => {
     if ($(window).scrollTop() > 100) {
@@ -39,6 +35,10 @@ export default function navbar(navbarStyle = 'transparent') {
     disableTransition();
   }
 
+  home.id = 'home';
+  menu.id = 'menu';
+  contact.id = 'contact';
+
   logo.innerText = 'Sea Delicacies';
   home.innerText = 'Home';
   menu.innerText = 'Menu';
@@ -50,10 +50,6 @@ export default function navbar(navbarStyle = 'transparent') {
 
   nav.appendChild(logo);
   nav.appendChild(linkList);
-
-  menu.addEventListener('click', menuPage);
-  home.addEventListener('click', homePage);
-  contact.addEventListener('click', contactPage);
 
   return nav;
 }

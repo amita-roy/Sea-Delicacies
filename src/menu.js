@@ -9,7 +9,6 @@ export default function menu() {
 
   menuContent.classList.add('menu');
   itemGrid.classList.add('itemList');
-  menuContent.id = 'menu';
   menuItems.forEach((item) => {
     itemGrid.appendChild(
       ItemCard(item.url, item.name, item.price, item.description)

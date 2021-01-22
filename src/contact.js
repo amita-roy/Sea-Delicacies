@@ -9,7 +9,6 @@ export default function contact() {
 
   contactContent.classList.add('contact');
   detailsWrapper.classList.add('detailsWrapper');
-  contactContent.id = 'contact';
 
   mainContainer.innerHTML = '';
 
