@@ -69,7 +69,7 @@ Give a ⭐️ if you like this project!
 - Stock images from unsplash
 
   - [Unsplash](https://unsplash.com/s/photos/seafood?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-  - [Pexels](https://www.pexels.com/photo/salad-with-salmon-covered-with-black-and-white-sesame-seeds-4193843/? utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)
+  - [Pexels](https://www.pexels.com/photo/salad-with-salmon-covered-with-black-and-white-sesame-seeds-4193843/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)
 
 - Photo by Ting Tian on Unsplash
 - Photo by Anastasiia Rusaeva on Unsplash
