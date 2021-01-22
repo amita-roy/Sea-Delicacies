@@ -60,6 +60,7 @@ body {
   justify-content: space-between;
   font-family: 'Poppins', sans-serif;
   transition: all 0.5s ease-in;
+  z-index:  222;
 }
 
 .navbar a {
@@ -79,10 +80,6 @@ body {
 
 .navbar.opaque .linkList a {
   color: #ff9e01;
-}
-
-.navbar.transparent .linkList a {
-  color: #fff;
 }
 
 .navbar,
@@ -176,6 +173,10 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 60px;
+}
+
+.card {
+  z-index: 0;
 }
 
 .itemList .card {
