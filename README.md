@@ -1,4 +1,4 @@
-# Sea Delicacies (Restaurant Page)
+# Sea Delicacies (Restaurant Page) (Page is not responsive)
 
 > DOM manipulation by dynamically rendering a simple restaurant homepage!. I have used JavaScript alone to generate the entire contents of the website!. I have created 3 pages (Home, Menu and Contact) for this project. User can switch to different tab by clicking on each nav item on the page.
 
