@@ -242,9 +242,8 @@ body {
 .offersBox {
   width: 70%;
   border: 2px solid #ff9e01;
-  height: 250px;
   text-align: center;
-  margin: 0 auto -180px;
+  margin: 0 auto;
   background-image: url(./assets/images/Offers.png);
   z-index: 999;
   border-radius: 20px;
@@ -281,9 +280,10 @@ body {
 }
 
 .contactDetails {
-  min-height: 550px;
+  min-height: 450px;
   background-color: #ff9e01;
   z-index: -1;
+  margin-top: 40px;
 }
 
 .contactLinksContainer {

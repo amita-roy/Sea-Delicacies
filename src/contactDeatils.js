@@ -14,6 +14,7 @@ const coreLinks = (paren) => {
   paren.appendChild(about);
   paren.appendChild(menu);
 };
+
 const supportLinks = (paren) => {
   const head = document.createElement('h4');
   const faq = document.createElement('p');
@@ -30,6 +31,7 @@ const supportLinks = (paren) => {
   paren.appendChild(tc);
   paren.appendChild(cs);
 };
+
 const conLinks = (paren) => {
   const head = document.createElement('h4');
   const phone = document.createElement('p');
@@ -53,9 +55,11 @@ export default function details() {
   const core = document.createElement('div');
   const support = document.createElement('div');
   const contactUs = document.createElement('div');
+  const extra = document.createElement('h1');
 
   linksContainer.classList.add('contactLinksContainer');
   contactDetails.classList.add('contactDetails');
+  extra.innerText = 'Wanted to add more things here but not enough time!!!!';
 
   coreLinks(core);
   supportLinks(support);
@@ -64,6 +68,7 @@ export default function details() {
   linksContainer.appendChild(core);
   linksContainer.appendChild(support);
   linksContainer.appendChild(contactUs);
+  linksContainer.appendChild(extra);
 
   contactDetails.appendChild(linksContainer);
 
