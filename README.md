@@ -20,7 +20,7 @@
 
 ## Live Demo
 
-[sea-delicacies](https://sea-delicacies.vercel.app/)
+[sea-delicacies](https://sea-delicacies-git-homepage.royamita.vercel.app/)
 
 ### Prerequisites
 
