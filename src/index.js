@@ -5,7 +5,12 @@ import navbar from './nav';
 
 import './style.css';
 
-const mainContainer = document.getElementById('content');
+const mainContainer = document.createElement('div');
+mainContainer.id = 'content';
+
+document.body.appendChild(mainContainer);
+
+// const mainContainer = document.getElementById('content');
 const body = document.createElement('div');
 
 mainContainer.appendChild(navbar());
