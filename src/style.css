@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #1c1c1c;
+}
+
+body {
+  font-family: 'OpenSans', sans-serif;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('./assets/fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('./assets/fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 30px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.5s ease-in;
+  z-index: 222;
+}
+
+.navbar a {
+  cursor: pointer;
+}
+
+.navbar.opaque {
+  background-color: #fff;
+}
+
+.linkList a {
+  margin-left: 70px;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+.navbar.opaque .linkList a {
+  color: #ff9e01;
+}
+
+.navbar,
+.leftHead h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  padding: 0 80px;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('./assets/images/head.png');
+}
+
+.leftHead {
+  max-width: 550px;
+  margin-top: 200px;
+}
+
+.leftHead h1 {
+  font-size: 55px;
+}
+
+.leftHead h1,
+.leftHead p,
+.about p,
+.about h3 {
+  margin-bottom: 30px;
+}
+
+.leftHead p,
+.about p {
+  line-height: 1.8;
+  color: rgb(88, 88, 88);
+}
+
+.leftHead button,
+.about button {
+  padding: 8px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #ff9e01;
+  color: white;
+  border-radius: 25px;
+}
+
+.rightHead {
+  width: 50%;
+  margin-top: 150px;
+}
+
+.rightHead img {
+  min-width: 450px;
+  width: 85%;
+  height: auto;
+  border-radius: 100%;
+}
+
+.about {
+  padding: 40px 80px;
+  display: flex;
+  align-items: center;
+  background-image: url('./assets/images/AboutBackground.png');
+  height: 500px;
+}
+
+.about .content {
+  max-width: 600px;
+}
+
+.about h3 {
+  font-size: 32px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.about img {
+  width: 450px;
+  margin-right: 200px;
+}
+
+.itemList {
+  padding: 147px 120px 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+.card {
+  z-index: 0;
+}
+
+.itemList .card {
+  border-radius: 45px 0 45px;
+  box-shadow: 3px 3px 14px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s linear;
+}
+
+.itemList .card:hover {
+  transform: scale3d(1.05, 1.05, 1.05);
+}
+
+.card .cardImage {
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  border-bottom-right-radius: 45px;
+}
+
+.cardDetails {
+  padding: 25px;
+}
+
+.cardDetailsTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dishName {
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #ff9e01;
+}
+
+.dishPrice {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.dishDescription {
+  color: rgb(88, 88, 88);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact .detailsWrapper {
+  padding: 80px;
+  margin-top: 120px;
+  min-height: 38vh;
+}
+
+.offersBox {
+  width: 70%;
+  border: 2px solid #ff9e01;
+  text-align: center;
+  margin: 0 auto;
+  background-image: url(./assets/images/Offers.png);
+  z-index: 999;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.offersBox h3 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.offersBox p {
+  max-width: 350px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  color: rgb(88, 88, 88);
+}
+
+.offersBox input {
+  width: 500px;
+  height: 50px;
+  padding: 10px 20px;
+  border: 1px solid #ff9e01;
+  border-radius: 25px;
+}
+
+.offersBox button {
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: #ff9e01;
+  font-size: 16px;
+  margin-left: -116px;
+  color: white;
+}
+
+.contactDetails {
+  min-height: 450px;
+  background-color: #ff9e01;
+  z-index: -1;
+  margin-top: 40px;
+}
+
+.contactLinksContainer {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
