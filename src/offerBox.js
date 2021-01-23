@@ -1,4 +1,4 @@
-export default function offerBox() {
+const offerBox = () => {
   const offerContainer = document.createElement('div');
   const offerHeading = document.createElement('h3');
   const offerDesc = document.createElement('p');
@@ -19,4 +19,6 @@ export default function offerBox() {
   offerContainer.appendChild(button);
 
   return offerContainer;
-}
+};
+
+export default offerBox;

@@ -1,7 +1,7 @@
 import menuItems from './menuItems';
 import ItemCard from './itemCard';
 
-export default function menu() {
+const menu = () => {
   const menuContent = document.createElement('div');
   const itemGrid = document.createElement('div');
 
@@ -16,4 +16,6 @@ export default function menu() {
 
   menuContent.appendChild(itemGrid);
   return menuContent;
-}
+};
+
+export default menu;

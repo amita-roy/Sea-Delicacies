@@ -1,4 +1,4 @@
-export default function navbar() {
+const navbar = () => {
   const nav = document.createElement('div');
 
   const logo = document.createElement('p');
@@ -29,4 +29,6 @@ export default function navbar() {
   nav.appendChild(linkList);
 
   return nav;
-}
+};
+
+export default navbar;

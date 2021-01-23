@@ -32,7 +32,7 @@ const rightContainer = () => {
   return rc;
 };
 
-export default function header() {
+const header = () => {
   const head = document.createElement('div');
 
   head.classList.add('header');
@@ -41,4 +41,6 @@ export default function header() {
   head.appendChild(rightContainer());
 
   return head;
-}
+};
+
+export default header;

@@ -30,7 +30,7 @@ const imageContainer = () => {
   return lc;
 };
 
-export default function about() {
+const about = () => {
   const aboutUs = document.createElement('div');
 
   aboutUs.classList.add('about');
@@ -39,4 +39,6 @@ export default function about() {
   aboutUs.appendChild(content());
 
   return aboutUs;
-}
+};
+
+export default about;

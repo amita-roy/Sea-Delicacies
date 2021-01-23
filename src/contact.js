@@ -1,7 +1,7 @@
 import OfferBox from './offerBox';
 import contactDetails from './contactDeatils';
 
-export default function contact() {
+const contact = () => {
   const contactContent = document.createElement('div');
   const detailsWrapper = document.createElement('div');
 
@@ -12,4 +12,6 @@ export default function contact() {
   contactContent.appendChild(detailsWrapper);
   contactContent.appendChild(contactDetails());
   return contactContent;
-}
+};
+
+export default contact;

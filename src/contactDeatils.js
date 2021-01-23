@@ -49,7 +49,7 @@ const conLinks = (paren) => {
   paren.appendChild(add);
 };
 
-export default function details() {
+const details = () => {
   const contactDetails = document.createElement('div');
   const linksContainer = document.createElement('div');
   const core = document.createElement('div');
@@ -70,4 +70,6 @@ export default function details() {
   contactDetails.appendChild(linksContainer);
 
   return contactDetails;
-}
+};
+
+export default details;
